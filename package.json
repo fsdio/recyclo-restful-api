@@ -10,7 +10,14 @@
     "start-dev": "nodemon dist/server.js",
     "lint": "eslint --ext .js,.ts .",
     "format": "prettier -w \"**/*.{js,ts,json}\"",
-    "format-c": "prettier -c \"**/*.{js,ts,json}\""
+    "format-c": "prettier -c \"**/*.{js,ts,json}\"",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix .",
+      "prettier -w"
+    ]
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -21,9 +28,11 @@
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "lint-staged": "^13.2.2",
     "nodemon": "^2.0.22",
     "prettier": "2.8.8",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.2",
