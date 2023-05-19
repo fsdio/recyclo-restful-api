@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@hapi/hapi": "^21.3.2",
+    "bcrypt": "^5.1.0",
     "nanoid": "^4.0.2",
     "validator": "^13.9.0"
   }
