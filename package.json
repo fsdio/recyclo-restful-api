@@ -1,0 +1,30 @@
+{
+  "name": "recyclo-restful-api",
+  "author": "Syahda Romansyah <syahdarom@gmail.com>",
+  "private": "true",
+  "description": "ReCyclo RESTful API",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "start-dev": "nodemon dist/server.js",
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier -w \"**/*.{js,ts,json}\"",
+    "format-c": "prettier -c \"**/*.{js,ts,json}\""
+  },
+  "devDependencies": {
+    "@types/hapi": "^18.0.8",
+    "@types/node": "^20.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
+  }
+}

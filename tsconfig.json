@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "dist",
+    "watch": true,
+    "incremental": true
+  },
+  "buildOptions": {
+    "verbose": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
